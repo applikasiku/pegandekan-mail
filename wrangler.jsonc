@@ -1,0 +1,9 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "pegandekan-mail",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-10-10",
+  "assets": {"directory": "./public", "binding": "ASSETS", "run_worker_first": ["/api/*"]},
+  "vars": {"MAIL_DOMAIN": "pegandekan.web.id"},
+  "d1_databases": [{"binding": "DB", "database_name": "pegandekan-mail", "database_id": "00000000-0000-0000-0000-000000000000", "migrations_dir": "migrations"}]
+}
